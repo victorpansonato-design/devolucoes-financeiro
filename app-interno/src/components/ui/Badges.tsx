@@ -1,0 +1,4 @@
+import { statuses, initials, type Status } from '../../lib/domain';
+// Status é palavra, não balão tingido. O estado concluído fica em silêncio.
+export function StatusBadge({ status }: { status: Status }) { return <span className={`inline-flex items-center gap-1.5 whitespace-nowrap text-[12px] font-semibold ${status === 'pago' ? 'text-money' : status === 'encerrado' ? 'text-crit-ink' : 'text-warn-ink'}`}>{status === 'pago' ? <span className="rounded-sm bg-money/10 px-1.5 py-0.5 text-[11px]">OK</span> : <span className={`h-1.5 w-1.5 rounded-full ${status === 'encerrado' ? 'bg-crit' : 'bg-warn'}`}/>} {statuses[status]}</span>; }
+export function Avatar({ name }: { name: string }) { return <span aria-hidden="true" className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-surface-2 text-[12px] font-medium text-ink-2">{initials(name)}</span>; }
