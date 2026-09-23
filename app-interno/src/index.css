@@ -21,6 +21,7 @@
   --ink-3: #6b7280;
   --ink-4: #9aa1ac;
   --money: #166534;
+  --money-soft: #ebf5ee;
 
   /* -- Marca: cirúrgica. Botão primário, nav ativo, arco do donut. -------- */
   --brand: #00509d;
@@ -97,6 +98,7 @@
   --ink-3: #8b929c;
   --ink-4: #626973;
   --money: #72d39a;
+  --money-soft: #12241a;
 
   --brand: #2b7cc9;
   --brand-hover: #3b8cd9;
@@ -168,6 +170,7 @@
   --color-ink-3: var(--ink-3);
   --color-ink-4: var(--ink-4);
   --color-money: var(--money);
+  --color-money-soft: var(--money-soft);
 
   --color-brand: var(--brand);
   --color-brand-hover: var(--brand-hover);
